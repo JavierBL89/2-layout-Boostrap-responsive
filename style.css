@@ -1,0 +1,345 @@
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.button-partner-text, .partner-new-box, .box-new{
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+
+}
+
+.nav-item, h1, .btn{
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+
+.wrapper{
+  margin: 0 ;
+
+  }
+
+
+  /* ----  NAVBAR ----- */
+
+
+
+  .navbar{
+    padding: 0 10% 10% 10%;
+    position: relative;
+    top: 50px;
+
+  }
+
+.navbar-brand{
+  padding-left: 0;
+}
+
+ul{
+  margin-left: 200px;
+}
+
+.nav-item{
+  padding: 0 6% 0 0;
+  font-weight: 700;
+}
+
+.round-checkbox{
+  cursor: pointer;
+  margin-top: 11px;
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  background-color: rgb(150, 152, 149);
+
+}
+
+
+
+
+/* HAMBURGUER */
+
+.line{
+  background-color: hsl(230, 29%, 20%);
+  border-radius: 10px;
+  width: 25px;
+  height: 0.175rem;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+
+.navbar-collapse{
+    flex-direction: column;
+  text-align: right;
+}
+
+
+/* ------ COLUMN LEFT ----- */
+
+
+
+.headder-title{
+  display: flex;
+}
+  .box-new{
+    font-weight: bold;
+    height: 30px;
+    width: 60px;
+    background-color: black;
+    color: white;
+    border-radius: 40%;
+    font-size: 0.900rem;
+  }
+
+  .text-new{
+    margin-left: 10px;
+    margin-top: 2px;
+
+  }
+
+  .partner-new-box{
+    color: hsl(231, 7%, 65%);
+    margin-top: 3px;
+margin-left: 20px;
+    letter-spacing: 5px;
+
+  }
+
+  h1{
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+
+.text-heading{
+  color: hsl(230, 11%, 40%);
+  font-size: 1.2rem;
+}
+
+
+
+  /* ----- CALL TO ACTION SECTION ---- */
+
+
+  .button-container{
+    display: flex;
+    margin-top: 15%;
+    padding-bottom: 30%;
+  }
+
+  .btn{
+    background-color: rgba(254, 94, 94, 0.97);
+    border-color: rgba(254, 94, 94, 0.97);
+  }
+
+  .btn:hover{
+    background-color: rgba(184, 42, 42, 0.97);
+    border-color: rgba(184, 42, 42, 0.97);
+
+
+  }
+
+  .button-partner-text{
+    color: hsl(231, 7%, 65%);
+    margin-top: 20px;
+    margin-left: 20px;
+    letter-spacing: 3px;
+
+  }
+
+
+
+
+/* ------- COLUMN RIGHT ------ */
+
+.container-fluid{
+  padding-left: 10%;
+  /* padding-right: 0;
+  margin-right: 0; */
+}
+.box-2{
+  background-image: url("images/illustration-devices.svg");
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  width: 629px;
+  height: 400px;
+
+}
+
+
+.grey{
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  width: 640px;
+  height: 450px;
+  padding-top: 5%;
+  border-bottom-left-radius: 20%;
+  background-color: rgb(237, 242, 246);
+}
+
+.attribution{
+  text-align: center;
+}
+
+@media (max-width: 1300px) {
+
+  .box-2{
+    background-image: url("images/illustration-devices.svg");
+    background-size: cover;
+    position: absolute;
+     right: -0px;
+    width: 579px;
+    height: 400px;
+
+  }
+
+}
+
+@media(max-width: 975px){
+
+/* ----- NAVBAR COLLAPSE--- */
+
+
+.navbar-collapse{
+  padding-top: 10%;
+}
+
+.nav-item{
+  padding-right: 0;
+
+}
+
+.nav-link{
+  animation-name: mymove;
+  animation-duration: 1s;
+}
+
+@keyframes mymove {
+
+  from{
+    position: relative;
+    right:100%
+  }
+  to{
+    position: relative;
+    right: 0;
+  }
+
+
+
+}
+
+
+
+  .row{
+flex-direction: column-reverse;
+}
+
+.box-2{
+  background-image: url("images/illustration-devices.svg");
+  background-size: cover;
+  position: relative;
+  left: 15%;
+  width: 85%;
+  height: 350px;
+  margin-top: 8%;
+  margin-bottom: 15%;
+
+
+}
+
+
+
+.round-checkbox{
+  position: relative;
+  left: 98%;
+}
+
+/* .nav-item{
+  justify-content: "";
+
+} */
+
+
+
+}
+
+@media (max-width: 575px){
+
+
+
+
+/* ------ COLUMN LEFT ----- */
+
+
+
+
+.partner-new-box{
+  margin-top: 8px;
+  right: 12%;
+  letter-spacing: 5px;
+  font-size: 0.700rem;
+
+}
+  h1{
+    font-size: 2rem;
+    margin-top: 5%;
+  }
+
+  .text-heading{
+    font-size: 1rem;
+   }
+
+
+  .btn{
+    width: 40%;
+    height: 50%;
+    font-size: 1rem;
+    padding: 2%;
+  }
+
+  .button-partner-text{
+
+    margin-top: 16px;
+    margin-right: 5%;
+    letter-spacing: 2px;
+    font-size: 0.700rem;
+
+  }
+
+
+
+  /* --------- COLUMN RIGHT  ------ */
+
+  .box-2{
+
+    position: relative;
+    left: 8%;
+    width: 92%;
+    height: 250px;
+     margin-top: 25%;
+    margin-bottom: 30%;
+
+
+  }
+
+  .grey{
+    width: 300px;
+    height: 540px;
+    padding-top: 5%;
+
+   }
+
+ }
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
